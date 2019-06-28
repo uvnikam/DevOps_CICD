@@ -4,6 +4,6 @@
     - name: WebServer Package Installation
       package: name=httpd state=present
     - name: Webserver configurations being done
-      copy: src=./index.html dest=/var/www/html/
+      copy: src=./* dest=/var/www/html/
     - name: Starting Web Service
       service: name=httpd state=started enabled=yes
