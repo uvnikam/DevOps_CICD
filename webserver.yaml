@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: umesh
   tasks:
     - name: WebServer Package Installation
       package: name=httpd state=present
